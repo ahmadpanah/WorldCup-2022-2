@@ -1,12 +1,14 @@
 package ir.shariaty.fifaworldcup2;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.app.ProgressDialog;
 import android.os.Bundle;
 import android.widget.Toast;
 
+import ir.shariaty.fifaworldcup2.adapter.FixtureAdapter;
 import ir.shariaty.fifaworldcup2.manager.RequestManager;
 import ir.shariaty.fifaworldcup2.models.FixtureResponse;
 
@@ -35,6 +37,10 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public void didFetch(FixtureResponse response, String status) {
             dialog.dismiss();
+            recyclerview.setHasFixedSize(true);
+            recyclerview.setLayoutManager(new LinearLayoutManager(MainActivity.this, LinearLayoutManager.VERTICAL , false));
+            FixtureAdapter adapter = new FixtureAdapter(MainActivity.this, response.data);
+            recyclerview.setAdapter(adapter);
         }
 
         @Override

@@ -11,7 +11,6 @@
        android:layout_width="match_parent"
        android:layout_height="wrap_content"
        android:id="@+id/recycler_fixture"
-       android:layout_margin="8dp"
-       />
+       android:layout_margin="8dp"/>
 
 </LinearLayout>

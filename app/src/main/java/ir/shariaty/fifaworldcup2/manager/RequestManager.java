@@ -10,6 +10,7 @@ import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 import retrofit2.http.GET;
+import retrofit2.http.Headers;
 
 public class RequestManager {
     Context context;
@@ -41,8 +42,13 @@ public class RequestManager {
             }
         });
     }
+
+
     private interface CallFixture {
         @GET ("match")
+        @Headers(
+                "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MzhiMmYyY2YyODA5NGFhM2FjMDRiM2YiLCJpYXQiOjE2NzEyODUyNTUsImV4cCI6MTY3MTM3MTY1NX0.AsULNEYOZuWz4wwXhjsws8ME-7V7Tp8CxyV6q_Jiysk"
+        )
         Call<FixtureResponse> callFixture();
     }
 }
