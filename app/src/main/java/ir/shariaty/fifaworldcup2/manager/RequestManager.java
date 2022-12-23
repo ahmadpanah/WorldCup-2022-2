@@ -47,7 +47,7 @@ public class RequestManager {
     private interface CallFixture {
         @GET ("match")
         @Headers(
-                "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MzhiMmYyY2YyODA5NGFhM2FjMDRiM2YiLCJpYXQiOjE2NzEyODUyNTUsImV4cCI6MTY3MTM3MTY1NX0.AsULNEYOZuWz4wwXhjsws8ME-7V7Tp8CxyV6q_Jiysk"
+                "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MzhiMmYyY2YyODA5NGFhM2FjMDRiM2YiLCJpYXQiOjE2NzE4MjQ3MDUsImV4cCI6MTY3MTkxMTEwNX0.iPU0ZZ46_1okMmGiAKc5WvEBGyli-qLSy4ZIaG7tmKI"
         )
         Call<FixtureResponse> callFixture();
     }

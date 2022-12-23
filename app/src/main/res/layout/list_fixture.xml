@@ -76,10 +76,10 @@
                     android:layout_height="wrap_content"
                     android:id="@+id/textView_time"
                     android:text="Time"
-                    android:textSize="20sp"
+                    android:textSize="14sp"
                     android:textColor="#FFEB3B"
                     android:textAlignment="textEnd"
-                    android:layout_marginStart="8dp"/>
+                    android:layout_marginEnd="8dp"/>
 
             </LinearLayout>
 
@@ -89,20 +89,20 @@
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
             android:text="Match Name"
-            android:textColor="#FF9320"
+            android:textColor="#FFDBB4"
             android:textAlignment="center"
             android:padding="8dp"
-            android:textSize="18sp"
+            android:textSize="16sp"
             android:textStyle="bold"/>
         <TextView
-            android:textSize="16sp"
+            android:textSize="12sp"
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
             android:text="FIFA WorldCup 2022"
             android:textColor="#3AFDBF"
             android:textAlignment="center"
             android:padding="8dp"
-            android:textStyle="bold"/>
+            android:textStyle="normal"/>
 
     </LinearLayout>
 

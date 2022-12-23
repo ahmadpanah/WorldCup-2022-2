@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
 
         manager = new RequestManager(this);
         // TODO I'll fix it later.
-        manager.getFixture();
+        manager.getFixture(listener);
     }
 
     private final ResponseListener listener = new ResponseListener() {
